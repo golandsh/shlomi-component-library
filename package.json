@@ -2,23 +2,22 @@
   "name": "shlomi-component-library",
   "version": "1.0.0",
   "description": "",
+  "scripts": {
+    "serve": "vue-cli-service serve dev/serve.js",
+    "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
+    "test:unit": "vue-cli-service test:unit",
+    "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
+    "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
+    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
+  },
   "main": "dist/shlomi-component-library.ssr.js",
-  "browser": "dist/shlomi-component-library.esm.js",
   "module": "dist/shlomi-component-library.esm.js",
+  "browser": "dist/shlomi-component-library.esm.js",
   "unpkg": "dist/shlomi-component-library.min.js",
   "files": [
     "dist/*",
     "src/**/*.vue"
   ],
-  "sideEffects": false,
-  "scripts": {
-    "serve": "vue-cli-service serve dev/serve.js",
-    "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
-    "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
-    "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
-    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
-  },
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
@@ -28,7 +27,9 @@
     "@rollup/plugin-node-resolve": "^11.0.1",
     "@rollup/plugin-replace": "^2.3.4",
     "@vue/cli-plugin-babel": "^4.5.10",
+    "@vue/cli-plugin-unit-jest": "^4.5.12",
     "@vue/cli-service": "^4.5.10",
+    "@vue/test-utils": "^1.0.3",
     "cross-env": "^7.0.3",
     "minimist": "^1.2.5",
     "rollup": "^2.36.1",
@@ -42,5 +43,6 @@
   },
   "engines": {
     "node": ">=12"
-  }
+  },
+  "sideEffects": false
 }

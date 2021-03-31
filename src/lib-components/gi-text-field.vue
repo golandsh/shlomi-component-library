@@ -51,6 +51,7 @@ input {
   border-left: 0;
   border-right: 0;
   outline: none;
+  width: 100%;
 }
 
 input:focus {

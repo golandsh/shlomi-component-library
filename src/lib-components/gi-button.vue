@@ -16,7 +16,6 @@ export default /*#__PURE__*/{
 
 <style scoped>
 button {
-  size: 20px;
-  border-radius: 10px;
+  border-radius: 50px;
 }
 </style>

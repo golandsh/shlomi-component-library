@@ -1,5 +1,8 @@
 <template>
-  <button class="gi-class">{{text}}</button>
+  <button class="gi-class">
+    {{text}}
+    <input type="image" :src="img" />
+  </button>
 </template>
 
 <script>
@@ -9,6 +12,10 @@ export default /*#__PURE__*/{
     text: {
       type: String,
       default: 'Click'
+    },
+    img: {
+      type: String,
+      default: ''
     }
   }
 };

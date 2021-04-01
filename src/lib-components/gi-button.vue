@@ -1,7 +1,5 @@
 <template>
-  <button class="gi-class">
-    {{text}}
-  </button>
+  <button :class="outlined ? 'outline' : 'gi-class'">{{text}}</button>
 </template>
 
 <script>
@@ -11,13 +9,24 @@ export default /*#__PURE__*/{
     text: {
       type: String,
       default: 'Click'
+    },
+    outlined: {
+      type: Boolean,
+      default: false
     }
   }
 };
 </script>
 
 <style scoped>
-button {
+.gi-class {
   border-radius: 50px;
+}
+
+.outline {
+  border-radius: 50px;
+  background-color: white;
+  border-color: lightblue;
+  color: lightblue;
 }
 </style>

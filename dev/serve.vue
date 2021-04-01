@@ -20,7 +20,7 @@ export default Vue.extend({
     <gi-text-field label="Text1">
       <p>Here is some cool text</p>
     </gi-text-field>
-    <gi-button />
+    <gi-button outlined />
     <gi-form :fields="fields"/>
   </div>
 </template>

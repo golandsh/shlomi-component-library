@@ -1,7 +1,7 @@
 <template>
   <button class="gi-class">
     {{text}}
-    <input v-if="img" type="image" :src="img"  alt=""/>
+    <input v-if="img !== ''" type="image" :src="img"  alt=""/>
   </button>
 </template>
 

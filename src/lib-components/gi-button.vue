@@ -20,11 +20,11 @@ export default /*#__PURE__*/{
 
 <style scoped>
 .gi-class {
-  border-radius: 50px;
+  border-radius: 20px;
 }
 
 .outline {
-  border-radius: 50px;
+  border-radius: 20px;
   background-color: white;
   border-color: lightblue;
   color: lightblue;

@@ -1,7 +1,6 @@
 <template>
   <button class="gi-class">
     {{text}}
-    <input v-if="img !== ''" type="image" :src="img"  alt=""/>
   </button>
 </template>
 
@@ -12,10 +11,6 @@ export default /*#__PURE__*/{
     text: {
       type: String,
       default: 'Click'
-    },
-    img: {
-      type: String,
-      default: ''
     }
   }
 };

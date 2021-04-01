@@ -1,6 +1,6 @@
 {
   "name": "shlomi-component-library",
-  "version": "1.0.9",
+  "version": "1.0.11",
   "description": "",
   "scripts": {
     "serve": "vue-cli-service serve dev/serve.js",

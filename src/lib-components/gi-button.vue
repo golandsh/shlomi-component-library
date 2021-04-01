@@ -21,6 +21,7 @@ export default /*#__PURE__*/{
 <style scoped>
 .gi-class {
   border-radius: 20px;
+  color: white;
 }
 
 .outline {

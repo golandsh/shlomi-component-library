@@ -27,7 +27,7 @@ export default /*#__PURE__*/{
 .outline {
   border-radius: 20px;
   background-color: white;
-  border-color: lightblue;
-  color: lightblue;
+  border-color: blue;
+  color: blue;
 }
 </style>
